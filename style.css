@@ -8,19 +8,20 @@ f   font-family:"Poppins", sans-serif;
 body,html {
     height: 100%;
     font-family: "Poppins", sans-serif;
+    background: url('./image/BG_Cinema.jpeg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .background {
-    background: url('./image/BG_Cinema.jpeg') no-repeat center center fixed;
-    background-size: cover;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex direction: column;
 }
 
 .login-card {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.3);
     color: white;
     padding: 40px;
     border-radius: 20px;
@@ -32,10 +33,17 @@ body,html {
   
 .logo {
     logo: url('./image/logo.png');
+    
     font-size: 24px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 10px;
+}
+
+.logo-image {
+    width: 100px;
+    height: 100px;
+    
 }
 
 h2 {
@@ -56,11 +64,18 @@ label {
   
 input[type="text"], input[type="password"] {
     padding: 10px;
+    width: 100%;
     border: none;
     border-radius: 20px;
     margin-top: 5px;
 }
   
+.eye-icon {
+    width: 100%;
+    background:red;
+    display:block;
+    top:0;
+}   
 .password-wrapper {
     position: relative;
 }
